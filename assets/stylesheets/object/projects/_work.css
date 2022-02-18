@@ -1,0 +1,116 @@
+.p-work__list {
+  display: flex;
+  position: relative;
+}
+.p-work__list:first-child {
+  margin-top: 0;
+}
+.p-work__list > dt {
+  position: absolute;
+  z-index: 10;
+}
+.p-work__list > dd {
+  z-index: 1;
+}
+.p-work__explanation {
+  background-color: #e2e2e254;
+}
+.p-work__explanation > dt {
+  color: #b4840c;
+}
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .p-work__list {
+    margin-top: 70px;
+  }
+  .p-work__list:nth-child(odd) {
+    padding-right: 40px;
+  }
+  .p-work__list:nth-child(even) {
+    flex-direction: row-reverse;
+    padding-left: 40px;
+  }
+  .p-work__list > dt {
+    width: 53%;
+  }
+  .p-work__list > dd {
+    width: 50%;
+    padding-top: 14%;
+  }
+  .p-work__list:nth-child(odd).p-work__list > dd {
+    margin-left: auto;
+  }
+  .p-work__list:nth-child(even).p-work__list > dd {
+    margin-right: auto;
+  }
+  .p-work__explanation {
+    padding: 50px 100px 20% 100px;
+  }
+  .p-work__explanation > dt {
+    font-size: 22px;
+  }
+  .p-work__explanation > dd {
+    margin-top: 10px;
+    font-size: 1.2vw;
+  }
+}
+@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+  .p-work__list {
+    margin-top: 100px;
+  }
+  .p-work__list:nth-child(odd) {
+    padding-right: 50px;
+  }
+  .p-work__list:nth-child(even) {
+    flex-direction: row-reverse;
+    padding-left: 50px;
+  }
+  .p-work__list > dt {
+    width: 53%;
+  }
+  .p-work__list > dd {
+    width: 50%;
+    padding-top: 13%;
+  }
+  .p-work__list:nth-child(odd).p-work__list > dd {
+    margin-left: auto;
+  }
+  .p-work__list:nth-child(even).p-work__list > dd {
+    margin-right: auto;
+  }
+  .p-work__explanation {
+    padding: 30px 60px 20% 60px;
+  }
+  .p-work__explanation > dt {
+    font-size: 20px;
+  }
+  .p-work__explanation > dd {
+    margin-top: 10px;
+    font-size: 1.4vw;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-work__list {
+    margin-top: 30px;
+    padding-right: 20px;
+  }
+  .p-work__list > dt {
+    width: 95%;
+    left: -3%;
+    top: 0;
+  }
+  .p-work__list > dd {
+    width: 90%;
+    padding-top: 43%;
+    margin-left: auto;
+  }
+  .p-work__explanation {
+    padding: 30% 10% 10% 10%;
+  }
+  .p-work__explanation > dt {
+    font-size: 3.1vw;
+  }
+  .p-work__explanation > dd {
+    margin-top: 5px;
+    font-size: 11px;
+  }
+}

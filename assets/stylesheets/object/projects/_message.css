@@ -1,0 +1,64 @@
+.p-message__catch {
+  text-align: right;
+  font-family: "Brownhill-Script";
+  color: #eca0a0;
+  transform: skewY(-10deg);
+  margin: 9% 10px 0 0;
+  line-height: 1;
+}
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .p-message {
+    display: flex;
+  }
+  .p-message__title {
+    font-size: 115px;
+    font-family: "Montserrat-Bold";
+    line-height: 1;
+    width: 585px;
+    padding-top: 80px;
+  }
+  .p-message__wrap {
+    flex: 1;
+    margin-left: 80px;
+  }
+  .p-message__catch {
+    font-size: 80px;
+    margin: 70px 0px 0 0;
+  }
+}
+@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+  .p-message__title {
+    display: none;
+  }
+  .p-message__catch {
+    font-size: 80px;
+    margin: 100px 50px 0 0;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-message {
+    position: relative;
+  }
+  .p-message__title {
+    display: none;
+  }
+  .p-message::before {
+    position: absolute;
+    display: block;
+    content: "OUR MESSAGE";
+    font-size: 55px;
+    font-family: "Montserrat-Bold";
+    top: 25%;
+    left: 0;
+    transform: translate(0%, -50%);
+    line-height: 1;
+    width: 300px;
+    color: rgba(243, 239, 239, 0.754);
+    padding-top: 80px;
+    z-index: -1;
+  }
+  .p-message__catch {
+    font-size: 50px;
+    margin: 9% 10px 0 0;
+  }
+}

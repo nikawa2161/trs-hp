@@ -1,0 +1,77 @@
+.p-service {
+  position: relative;
+}
+.p-service::before {
+  position: absolute;
+  display: block;
+  content: "Service";
+  font-size: 110px;
+  z-index: -1;
+  color: rgba(243, 239, 239, 0.754);
+  font-family: "Montserrat-Bold";
+}
+.p-service__about {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+}
+.p-service__image {
+  width: 230px;
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .p-service::before {
+    top: 5%;
+    left: 30%;
+    transform: translate(0%, -50%);
+    font-size: 150px;
+  }
+  .p-service__wrap {
+    padding: 0 20px;
+  }
+  .p-service__image {
+    width: 32%;
+    max-width: 387px;
+  }
+  .p-service__works {
+    margin-top: 80px;
+  }
+}
+@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+  .p-service::before {
+    top: 6%;
+    left: 31%;
+    transform: translate(0%, -50%);
+    font-size: 150px;
+  }
+  .p-service__wrap {
+    padding: 0 20px;
+  }
+  .p-service__image {
+    width: 32%;
+    max-width: 387px;
+  }
+  .p-service__works {
+    margin-top: 80px;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-service::before {
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    /* font-size: 12vw; */
+  }
+  .p-service__about {
+    overflow: scroll;
+  }
+  .p-service__image {
+    width: 252px;
+    margin-left: 10px;
+  }
+  .p-service__works {
+    margin-top: 50px;
+  }
+}

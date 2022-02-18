@@ -1,0 +1,16 @@
+.p-footer {
+  text-align: right;
+}
+.p-footer__copyright {
+  font-family: "Montserrat-Regular";
+}
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .p-footer__copyright {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-footer__copyright {
+    font-size: 15px;
+  }
+}

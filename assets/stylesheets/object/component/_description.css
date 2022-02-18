@@ -1,0 +1,55 @@
+.c-description__heading {
+  color: #b4840c;
+  font-family: "Montserrat-Bold";
+}
+.c-description__heading > span::before {
+  content: "";
+  display: inline-block;
+  border-top: solid 1px #b4840c;
+}
+.c-description__title {
+  padding-top: 10px;
+  font-weight: 700;
+}
+.c-description__list > dd {
+  margin-top: 10px;
+}
+.c-description__text {
+  font-family: "Montserrat-Regular";
+}
+.c-description__text:first-child {
+  margin-top: 0;
+}
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .c-description__heading {
+    font-size: 23px;
+  }
+  .c-description__heading > span::before {
+    width: 50px;
+    padding-top: 7px;
+    margin: 0 5px;
+  }
+  .c-description__title {
+    font-size: 30px;
+  }
+  .c-description__text {
+    margin-top: 22px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .c-description__heading {
+    font-size: 3.1vw;
+  }
+  .c-description__heading > span::before {
+    width: 6vw;
+    padding-top: 1vw;
+  }
+  .c-description__title {
+    font-size: 4.5vw;
+  }
+  .c-description__text {
+    font-size: 15px;
+    margin-top: 3%;
+  }
+}

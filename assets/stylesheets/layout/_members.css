@@ -1,0 +1,25 @@
+.l-members {
+  background-image: url(../../images/common/member-bg.png);
+  background-size: cover;
+  background-position: center center;
+  padding: 70px;
+}
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .l-members {
+    padding: 70px 100px 120px 100px;
+    margin-top: 130px;
+  }
+}
+
+@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+  .l-members {
+    padding: 70px 50px 130px 50px;
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .l-members {
+    padding: 60px 7% 115px 7%;
+    margin-top: 120px;
+  }
+}

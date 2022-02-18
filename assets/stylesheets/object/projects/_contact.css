@@ -1,0 +1,46 @@
+.p-contact {
+  position: relative;
+}
+.p-contact::before {
+  position: absolute;
+  display: block;
+  transform: translate(-50%, -50%);
+  content: "CONTACT";
+  font-size: 80px;
+  z-index: -1;
+  color: rgba(243, 239, 239, 0.754);
+  font-family: "Montserrat-Bold";
+}
+.p-contact__wrap {
+  text-align: center;
+}
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .p-contact::before {
+    top: 6%;
+    left: 48%;
+    font-size: 160px;
+  }
+  .p-contact__form {
+    margin-top: 130px;
+  }
+}
+@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+  .p-contact::before {
+    top: 7%;
+    left: 50%;
+    font-size: 150px;
+  }
+  .p-contact__form {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-contact::before {
+    top: 8%;
+    left: 50%;
+    font-size: 80px;
+  }
+  .p-contact__form {
+    margin-top: 50px;
+  }
+}

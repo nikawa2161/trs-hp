@@ -1,0 +1,15 @@
+.p-members__wrap {
+  text-align: center;
+}
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .p-members__staffs {
+    margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-members__staffs {
+    margin-top: 30px;
+  }
+
+}

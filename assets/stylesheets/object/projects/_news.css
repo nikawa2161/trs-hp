@@ -1,0 +1,44 @@
+.p-news {
+  position: relative;
+}
+.p-news__wrap {
+  text-align: center;
+}
+.p-news::before {
+  position: absolute;
+  display: block;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "NEWS";
+  font-size: 80px;
+  z-index: -1;
+  color: rgba(243, 239, 239, 0.754);
+  font-family: "Montserrat-Bold";
+}
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .p-news::before {
+    top: 17%;
+    font-size: 130px;
+  }
+  .p-news__info {
+    margin-top: 100px;
+  }
+}
+@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+  .p-news::before {
+    top: 19%;
+    font-size: 160px;
+  }
+  .p-news__info {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-news::before {
+    top: 23%;
+    font-size: 90px;
+  }
+  .p-news__info {
+    margin-top: 50px;
+  }
+}

@@ -1,0 +1,48 @@
+  .p-benefit {
+    position: relative;
+    }
+  .p-benefit::before {
+    position: absolute;
+    display: block;
+    transform: translate(-50%, -50%);
+    content: "Benefit";
+    z-index: -1;
+    color: rgba(243, 239, 239, 0.754);
+    font-family: "Montserrat-Bold";
+  }
+  .p-benefit__wrap {
+    text-align: center;
+  }
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .p-benefit::before {
+    top: 14%;
+    left: 48%;
+    font-size: 160px;
+  }
+  .p-benefit__product {
+    margin-top: 70px;
+  }
+}
+@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+  .p-benefit::before {
+    top: 12%;
+    left: 48%;
+    font-size: 160px;
+  }
+  .p-benefit__product {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-benefit::before {
+    top: 3.2%;
+    left: 50%;
+    font-size: 80px;
+  }
+  .p-benefit__text {
+    font-size: 3.2vw;
+  }
+  .p-benefit__product {
+    margin-top: 50px;
+  }
+}

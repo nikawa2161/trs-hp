@@ -1,0 +1,19 @@
+.l-footer {
+  border-top: 1px solid black;
+}
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .l-footer {
+    padding: 40px 80px;
+    border-top: 1px solid black;
+  }
+}
+@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+  .l-footer {
+    padding: 40px 100px;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .l-footer {
+    padding: 20px 7%;
+  }
+}

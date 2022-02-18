@@ -1,0 +1,23 @@
+  .l-contents:first-child {
+    margin-top: 0;
+  }
+@media screen and (min-width: 796px) { /* pc用スタイル */
+  .l-contents {
+    padding: 0px 70px 0 70px ;
+    margin-top: 130px;
+  }
+  .l-contents:first-child {
+    padding: 100px 70px 0 70px ;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .l-contents {
+    padding: 0px 7% 0 7% ;
+    margin-top: 10%;
+  }
+  .l-contents:first-child {
+    padding: 50px 7% 0 7% ;
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,34 @@
+.p-curriculum {
+  display: flex;
+  align-items: center;
+}
+.p-curriculum__text {
+  color: #edba57;
+}
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .p-curriculum__logo {
+    width: 70px;
+  }
+  .p-curriculum__text {
+    margin-left: 20px;
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+  .p-curriculum__logo {
+    width: 50px;
+  }
+  .p-curriculum__text {
+    margin-left: 10px;
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-curriculum__logo {
+    width: 30px;
+  }
+  .p-curriculum__text {
+    margin-left: 10px;
+    font-size: 2vw;
+  }
+}

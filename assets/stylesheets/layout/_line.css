@@ -1,0 +1,39 @@
+.l-line {
+  height: auto;
+  background-color: #b4840c;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.l-line__text {
+  display: block;
+  font-size: 3.3vw;
+  color: #ffff;
+}
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .l-line {
+    padding: 15px 0;
+  }
+  .l-line__text {
+    font-size: 1.1vw;
+    font-family: "Montserrat-SemiBold";
+  }
+}
+@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+  .l-line {
+    padding: 15px 0;
+  }
+  .l-line__text {
+    font-size: 2vw;
+    font-family: "Montserrat-SemiBold";
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .l-line {
+    padding: 15px 12%;
+  }
+  .l-line__text {
+    font-size: 3.3vw;
+  }
+}

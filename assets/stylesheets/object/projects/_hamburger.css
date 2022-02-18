@@ -1,0 +1,106 @@
+.p-hamburger__hidden{
+  display:none;
+}
+@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+  .p-hamburger__nav {
+    display: none;
+  }
+  .p-hamburger__input:checked ~ .p-hamburger__nav {
+    display: block;
+    animation: 1s fadeIn;
+  }
+  .p-hamburger__input:checked ~ .p-hamburger__label {
+    display: none;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .p-hamburger__label {
+    position: relative;
+    height: 12px;
+    width: 37px;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .p-hamburger__btn {
+    position: absolute;
+    right: 0;
+    height: 1px;
+    background-color: #777777;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  .p-hamburger__btn:nth-child(1) {
+    width: 37px;
+  }
+  .p-hamburger__btn:nth-child(2) {
+    width: 26px;
+  }
+  .p-hamburger__btn:nth-child(3) {
+    width: 29px;
+  }
+  .p-hamburger__btn:nth-child(1) {
+    bottom: 16px;
+  }
+  .p-hamburger__btn:nth-child(2) {
+    bottom: 8px;
+  }
+  .p-hamburger__btn:nth-child(3) {
+    bottom: 0;
+  }
+}
+
+
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-hamburger__nav {
+    display: none;
+  }
+  .p-hamburger__input:checked ~ .p-hamburger__nav {
+    display: block;
+    animation: 1s fadeIn;
+  }
+  .p-hamburger__input:checked ~ .p-hamburger__label {
+    display: none;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .p-hamburger__label {
+    position: relative;
+    height: 12px;
+    width: 37px;
+    display: inline-block;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+  .p-hamburger__btn {
+    
+    position: absolute;
+    right: 0;
+    height: 1px;
+    background-color: #777777;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  .p-hamburger__btn:nth-child(1) {
+    width: 37px;
+  }
+  .p-hamburger__btn:nth-child(2) {
+    width: 26px;
+  }
+  .p-hamburger__btn:nth-child(3) {
+    width: 29px;
+  }
+  .p-hamburger__btn:nth-child(1) {
+    bottom: 16px;
+  }
+  .p-hamburger__btn:nth-child(2) {
+    bottom: 8px;
+  }
+  .p-hamburger__btn:nth-child(3) {
+    bottom: 0;
+  }
+}

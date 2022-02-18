@@ -1,0 +1,73 @@
+.p-nav {
+  color: rgb(26, 23, 23);
+  font-weight: 800;
+  align-items: center;
+}
+.p-nav__list {
+  display: flex;
+}
+.p-nav__list > li:first-child {
+  margin-top: 0px;
+}
+.p-nav__contact {
+  background-color: #b4840c;
+  border-radius: 30px;
+  color: #ffff;
+  cursor: pointer;
+}
+.p-nav__link {
+  display: block;
+}
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .p-nav {
+    z-index: 100;
+    display: flex;
+  }
+  .p-nav__list > li {
+    margin-left: 40px;
+  }
+  .p-nav__contact {
+    margin-left: 40px;
+  }
+  .p-nav__link {
+    padding: 5px 30px;
+  }
+}
+@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+  .p-nav {
+    display: flex;
+    font-size: 12px;
+  }
+  .p-nav__list > li {
+    margin-left: 20px;
+  }
+  .p-nav__contact {
+    margin-left: 20px;
+  }
+  .p-nav__link {
+    padding: 5px 30px;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+  }
+  .p-nav__list {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .p-nav__list > li {
+    border-radius: 30px;
+    border: 1px solid #b4840c;
+    margin-top: 1vw;
+  }
+  .p-nav__contact {
+    margin-top: 1vw;
+  }
+  .p-nav__link {
+    padding: 5px 20px;
+  }
+}
