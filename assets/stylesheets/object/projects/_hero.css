@@ -9,49 +9,14 @@
 .p-hero::after {
   display: block;
   content: "";
-  background-image: url(../../../images/common/pexels-дмитрий-трепольский-11107322.jpg);
+  background-image: url(../../../images/common/img-3.jpg);
   z-index: 10;
 }
 .p-hero__title > dt {
   font-weight: 700;
 }
-@media screen and (min-width: 1126px) {
-  /* pc用スタイル */
-  .p-hero {
-    display: flex;
-    justify-content: space-between;
-    height: 100vh;
-    align-items: center;
-  }
-  .p-hero::before {
-    display: block;
-    top: 32%;
-    left: -3%;
-    content: "CURRICULUM";
-    font-size: 160px;
-    z-index: -10;
-    color: rgba(243, 239, 239, 0.754);
-    font-family: "Montserrat-Bold";
-  }
-  .p-hero::after {
-    height: 600px;
-    width: 60%;
-    min-width: 720px;
-    background-size: cover;
-  }
-  .p-hero__title {
-    margin-left: 70px;
-    width: 320px;
-  }
-  .p-hero__title > dt {
-    font-size: 32px;
-  }
-  .p-hero__title > dd {
-    margin-top: 10px;
-    font-size: 15px;
-  }
-}
-@media screen and (min-width: 796px) and (max-width: 1125px) {
+
+@media screen and (min-width: 796px)  {
   /* pc用スタイル */
   .p-hero::before {
     background-color: rgba(0, 0, 0, 0.2);
@@ -68,17 +33,17 @@
   }
   .p-hero__title {
     position: absolute;
-    top: 27%;
+    top: 47%;
     left: 8%;
     color: #fff;
     width: 58%;
   }
   .p-hero__title > dt {
-    font-size: 35px;
+    font-size: 45px;
   }
   .p-hero__title > dd {
     margin-top: 10px;
-    font-size: 11px;
+    font-size: 25px;
   }
   .p-hero__br {
     display: inline-block;

@@ -1,7 +1,7 @@
 .p-hamburger__hidden{
   display:none;
 }
-@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+@media screen and (min-width: 796px) and (max-width: 1240px) { /* pc用スタイル */
   .p-hamburger__nav {
     display: none;
   }

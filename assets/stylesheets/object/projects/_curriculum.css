@@ -3,7 +3,7 @@
   align-items: center;
 }
 .p-curriculum__text {
-  color: #edba57;
+  color: #000;
 }
 @media screen and (min-width: 1126px) { /* pc用スタイル */
   .p-curriculum__logo {
