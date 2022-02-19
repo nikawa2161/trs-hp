@@ -6,13 +6,16 @@
 .p-nav__list {
   display: flex;
 }
+.p-nav__list > li {
+  color: #fff;
+}
 .p-nav__list > li:first-child {
   margin-top: 0px;
 }
 .p-nav__contact {
-  background-color: #000;
+  background-color: #fff;
   border-radius: 30px;
-  color: #ffff;
+  color: #000;
   cursor: pointer;
 }
 .p-nav__link {
