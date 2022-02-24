@@ -22,13 +22,9 @@
   font-size: 1vw;
 }
 @media screen and (min-width: 1126px) { /* pc用スタイル */
-  .p-staff {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
   .p-staff__list {
-    width: 32%;
+    width: 70%;
+    margin: 0 auto;
   }
   .p-staff__list:nth-child(n+4) {
     margin-top: 50px;
