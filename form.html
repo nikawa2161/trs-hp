@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="expires" content="604800">
+  <meta name="format-detection" content="email=no,telephone=no,address=no">
+  <title>株式会社TRS</title>
+  <meta name="description" content="03 | 3-practiceのdescriptionです">
+  <link rel="icon" href="assets/images/common/favicon.ico">
+  <link rel="stylesheet" href="assets/stylesheets/app.css">
+</head>
+<body>
+  <div class="l-container">
+      <header>
+        <div class="l-formHeader">
+          <div class="p-formCurriculum">
+            <img class="p-formCurriculum__logo" src="assets/images/common/logo.png" alt="practice-logo"/>
+            <p class="p-formCurriculum__text">株式会社TRS</p>
+          </div>
+          <div class="p-hamburger">
+            <input id="nav-input" type="checkbox" class="p-hamburger__hidden p-hamburger__input">
+            <label for="nav-input" class="p-hamburger__label">
+              <span class="p-hamburger__btn"></span>
+              <span class="p-hamburger__btn"></span>
+              <span class="p-hamburger__btn"></span>
+            </label>
+            <nav class="p-hamburger__nav">
+              <div class="p-formNav">
+                <ul class="p-formNav__list">
+                  <li><a href="">message</a></li>
+                  <li><a href="">service</a></li>
+                  <li><a href="">member</a></li>
+                  <li><a href="">benefit</a></li>
+                </ul>
+                <div class="p-formNav__contact">
+                  <a class="p-formNav__link" href="">contact</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+  <div class="p-content">
+    <div class="p-content__title">
+      <h2 class="p-content__text">
+        <div class="p-content__heading">CONTACT</div>
+        <div class="pageTitle__title">お問い合わせ</div>
+      </h2>
+    </div>
+  </div>
+  <div class="l-contact">
+  <section class="p-phoneForm">
+    <p class="p-phoneForm__cell">お電話でお問い合わせ</p>
+    <div class="p-phoneForm__tell"><a href="tel:0357763771">03-5776-3771</a></div>
+    <p class="p-phoneForm__time">受付時間 10:00～17:00</p>
+  </section>
+
+  <hr class="l-contact__line">
+
+  <section class="p-mailform">
+
+    <div class="p-mailform__heading">
+      <h3 class="p-mailform__title">お問い合わせフォーム</h3>
+      <p class="p-mailform__read">下記のフォームに必要事項をご記入の上[入力内容を確認する]ボタンを押してください。<br><span>必須</span>の付いている項目は、必ずご記入ください。</p>
+    </div>
+
+      <form class="p-mailform__entry" method="post" action="entry/confirm.php" name="entry">
+        <table class="p-mailform__contact">
+          <tbody class="p-mailform__body">
+            <tr class="p-mailform__tr">
+              <th class="p-mailform__th">件名<span class="p-mailform__mustspan">必須</span></th>
+              <td class="p-mailform__td">
+                <div class="selectbox_s01">
+                  <select name="subject" id="subject">
+                    <option class="p-mailform__option" value="" selected>選択してください</option>
+                    <option class="p-mailform__option" value="お問い合わせ">お問い合わせ</option>
+                    <option class="p-mailform__option" value="資料請求">資料請求</option>
+                  </select>
+                </div>
+              </td>
+            </tr>
+            <tr class="p-mailform__tr">
+              <th class="p-mailform__th">会社名</th>
+              <td class="p-mailform__td">
+                <p id="error_furigana"></p>
+                <input class="p-mailform__input" type="text" name="companyName" id="companyName" required>
+              </td>
+            </tr>
+            <tr class="p-mailform__tr">
+              <th class="p-mailform__th">ご担当者お名前<span class="p-mailform__mustspan">必須</span></th>
+              <td class="p-mailform__td">
+                <p id="error_name"></p>
+                <input class="p-mailform__input" type="text" name="officerName" id="officerName" required>
+              </td>
+            </tr>
+            <tr class="p-mailform__tr">
+              <th class="p-mailform__th">メールアドレス<span class="p-mailform__mustspan">必須</span></th>
+              <td class="p-mailform__td">
+                <p id="error_email"></p>
+                <input class="p-mailform__input" type="text" name="mail" class="formText email required" id="mail" required>
+              </td>
+            </tr>
+            <tr class="p-mailform__tr">
+              <th class="p-mailform__th">電話番号<span class="p-mailform__mustspan">必須</span></th>
+              <td class="p-mailform__td">
+                <p id="error_tel"></p><input class="p-mailform__input" type="text" name="tel" id="tel">
+              </td>
+            </tr>
+            <tr class="p-mailform__tr">
+              <th class="p-mailform__th">メッセージ本文<span class="p-mailform__mustspan">必須</span></th>
+              <td class="p-mailform__td">
+                <p id="error_career_history"></p>
+                <textarea name="body" type="text" id="body"></textarea>
+                <span class="p-mailform__small">※お問い合わせ内容をご記入ください。</span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <div class="p-mailform__btnArea">
+          <input class="p-mailform__input" type="hidden" name="privacy" value="同意する" id="confirm_button">
+          <div class="button-hover"></div>
+          <button type="button" value="入力内容を確認する" id="sendButton">入力内容を確認する</button>
+        </div>
+      </form>
+    </section>
+        </div>
+    </div>
+  
+</body>
+</html>

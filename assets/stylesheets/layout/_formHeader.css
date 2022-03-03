@@ -1,0 +1,24 @@
+.l-formHeader {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  border-bottom: solid 1px gray;
+}
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .l-formHeader {
+    height: 100px;
+    padding: 0 80px;
+  }
+}
+@media screen and (max-width: 1125px) { /* pc用スタイル */
+  .l-formHeader {
+    height: 70px;
+    padding: 0 60px;
+  }
+}
