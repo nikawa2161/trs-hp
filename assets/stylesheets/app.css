@@ -24,6 +24,7 @@
 @import 'layout/_contact.css';
 @import 'layout/_footer.css';
 @import 'layout/_formHeader.css';
+@import 'layout/_mission.css';
 
 /*// ==========================================================================
 // Object
@@ -66,6 +67,8 @@
 @import 'object/projects/_formCurriculum.css';
 @import 'object/projects/_formNav.css';
 @import 'object/projects/_phoneForm.css';
+@import 'object/projects/_consul.css';
+@import 'object/projects/_mission.css';
 
 /*// -----------------------------------------------------------------
 // Utility
