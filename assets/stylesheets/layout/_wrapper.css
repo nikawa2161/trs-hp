@@ -1,3 +1,20 @@
 .l-wrapper {
   width: 100%;
+  /* position: relative; */
 }
+/* body {
+  position: relative;
+}
+
+.l-wrapper:before {
+  background: #00000066;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  z-index: 5;
+} */

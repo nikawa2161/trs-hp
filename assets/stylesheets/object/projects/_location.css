@@ -1,16 +1,3 @@
-.p-location {
-  position: relative;
-  text-align: center;
-}
-.p-location::before {
-  position: absolute;
-  display: block;
-  transform: translate(-50%, -50%);
-  content: "LOCATION";
-  z-index: -1;
-  color: rgba(243, 239, 239, 0.754);
-  font-family: "Montserrat-Bold";
-}
 .p-location__map {
   margin-top: 30px;
   height: 0;
@@ -18,7 +5,7 @@
   padding-top: 56%;
   position: relative;
 }
-@media screen and (min-width: 1126px) { /* pc用スタイル */
+@media screen and (min-width: 1126px) { 
   .p-location::before {
     top: 12%;
     left: 50%;
@@ -28,14 +15,14 @@
     display: none;
   }
 }
-@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+@media screen and (min-width: 796px) and (max-width: 1125px) { 
   .p-location::before {
     top: 12%;
     left: 50%;
     font-size: 155px;
   }
 }
-@media screen and (max-width: 795px) { /* sp用スタイル */
+@media screen and (max-width: 795px) { 
   .p-location::before {
     top: 5%;
     left: 60%;

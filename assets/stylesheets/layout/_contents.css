@@ -1,3 +1,7 @@
+  .l-contents {
+    background-color: #EFEFEF;
+    z-index: 1;
+  }
   .l-contents:first-child {
     margin-top: 0;
   }
