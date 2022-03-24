@@ -1,13 +1,16 @@
 .l-header {
-  position: fixed;
+  width: 100%;
+  background-color: #000;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: #000;
+  padding: 0 20px;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 100;
+  z-index: 10;
+  box-sizing: border-box;
   border-bottom: solid 1px gray;
 }
 @media screen and (min-width: 1126px) { /* pc用スタイル */

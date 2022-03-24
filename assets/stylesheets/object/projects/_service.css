@@ -1,7 +1,7 @@
 .p-service {
   position: relative;
 }
-.p-service::before {
+/* .p-service::before {
   position: absolute;
   display: block;
   content: "Service";
@@ -9,14 +9,15 @@
   z-index: -1;
   color: rgba(243, 239, 239, 0.754);
   font-family: "Montserrat-Bold";
-}
+} */
 .p-service__about {
   display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
+  width: 80%;
+  /* justify-content: space-between;
+  padding-top: 40px; */
 }
 .p-service__image {
-  width: 230px;
+  width: 200px;
   margin-left: 10px;
 }
 

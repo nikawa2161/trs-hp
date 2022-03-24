@@ -1,3 +1,8 @@
+.c-description {
+  width: 53%;
+  text-align: center;
+  margin: 0 auto;
+}
 .c-description__heading {
   color: #b4840c;
   font-family: "Montserrat-Bold";
@@ -10,6 +15,7 @@
 .c-description__title {
   padding-top: 10px;
   font-weight: 700;
+  font-size: 50px;
 }
 .c-description__list > dd {
   margin-top: 10px;
@@ -30,7 +36,7 @@
     margin: 0 5px;
   }
   .c-description__title {
-    font-size: 30px;
+    font-size: 50px;
   }
   .c-description__text {
     margin-top: 22px;

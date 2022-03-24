@@ -8,6 +8,7 @@
   .p-product__text {
     font-weight: 700;
   }
+  
 @media screen and (min-width: 1126px) { /* pc用スタイル */
   .p-product {
     display: flex;
@@ -19,7 +20,7 @@
   .p-product__heading {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     min-height: 60px;
     font-size: 1.3vw;
   }
