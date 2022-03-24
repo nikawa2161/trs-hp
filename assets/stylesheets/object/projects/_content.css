@@ -1,0 +1,30 @@
+.p-content {
+  margin-top: 70px;
+}
+.p-content__title {
+    padding: 70px;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 100px;
+    background-image: url(../../../images/common/img-3.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+.p-content__text {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.p-content__heading {
+  font-size: 60px;
+}
+

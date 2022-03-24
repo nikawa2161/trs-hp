@@ -1,0 +1,26 @@
+.p-mission__heading {
+  font-size: 70px;
+  text-align: center;
+}
+
+
+.p-mission__content {
+  width: 100%;
+  padding: 30px;
+}
+.p-mission__title {
+  font-size: 40px;
+  font-weight: bold;
+  /* text-align: center; */
+  border-bottom: 1px solid #e74c3c;
+  display: inline-block;
+}
+.p-mission__profile {
+  font-size: 30px;
+  margin-top: 20px;
+  /* text-align: center; */
+}
+.p-mission__text {
+  margin-left: 10px;
+}
+

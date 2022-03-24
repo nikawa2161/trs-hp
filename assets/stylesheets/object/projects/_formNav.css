@@ -1,0 +1,76 @@
+.p-formNav {
+  color: rgb(26, 23, 23);
+  font-weight: 800;
+  align-items: center;
+}
+.p-formNav__list {
+  display: flex;
+}
+.p-formNav__list > li {
+  /* color: #fff; */
+}
+.p-formNav__list > li:first-child {
+  margin-top: 0px;
+}
+.p-formNav__contact {
+  background-color: #000;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+.p-formNav__link {
+  display: block;
+}
+@media screen and (min-width: 1126px) { /* pc用スタイル */
+  .p-formNav {
+    z-index: 100;
+    display: flex;
+  }
+  .p-formNav__list > li {
+    margin-left: 40px;
+  }
+  .p-formNav__contact {
+    margin-left: 40px;
+  }
+  .p-formNav__link {
+    padding: 5px 30px;
+  }
+}
+@media screen and (min-width: 796px) and (max-width: 1125px) { /* pc用スタイル */
+  .p-formNav {
+    display: flex;
+    font-size: 12px;
+  }
+  .p-formNav__list > li {
+    margin-left: 20px;
+  }
+  .p-formNav__contact {
+    margin-left: 20px;
+  }
+  .p-formNav__link {
+    padding: 5px 30px;
+  }
+}
+@media screen and (max-width: 795px) { /* sp用スタイル */
+  .p-formNav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1vw;
+  }
+  .p-formNav__list {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .p-formNav__list > li {
+    border-radius: 30px;
+    border: 1px solid #b4840c;
+    margin-top: 1vw;
+  }
+  .p-formNav__contact {
+    margin-top: 1vw;
+  }
+  .p-formNav__link {
+    padding: 5px 20px;
+  }
+}

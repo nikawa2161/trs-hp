@@ -1,0 +1,104 @@
+.p-mailform {
+  width: 100%;
+}
+.p-mailform__heading {
+  text-align: center;
+  position: relative;
+}
+.p-mailform__title {
+  font-size: 30px;
+}
+.p-mailform__read {
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.p-mailform__read > span {
+  color: #fa0000;
+}
+.p-mailform__read::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #c30d23;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -30px;
+}
+
+.p-mailform__entry {
+  background-color: #f2f1ec;
+  margin-top: 50px;
+
+}
+.p-mailform__contact {
+  width: 100%;
+}
+
+.p-mailform__body {
+  
+}
+.p-mailform__tr {
+  display: flex;
+  align-items: center;
+}
+
+.p-mailform__th {
+  font-weight: 400;
+  width: 30%;
+  vertical-align: top;
+}
+.p-mailform__th > .p-mailform__mustspan {
+  padding: 5px;
+  font-size: 12px;
+  margin: 0 10px;
+  color: #fff;
+  background: #fa0000;
+  border-radius: 2px;
+}
+
+.p-mailform__td {
+  width: 100%;
+  padding: 50px 0;
+  font-size: 50px;
+  line-height: 2;
+}
+.p-mailform__input {
+  font-size: 20px;
+  height: 100px;
+  width: 70%;
+}
+
+.p-mailform__small {
+    font-size: 15px;
+    display: block;
+}
+
+.p-mailform__btnArea {
+    padding-bottom: 120px;
+}
+
+.p-mailform__btnArea > button {
+    margin: 0 auto;
+    width: 250px;
+    height: 70px;
+    line-height: 70px;
+    border: 2px solid #000;
+    text-align: center;
+    background-color: #fff;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    letter-spacing: .3em;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+}
+.p-mailform__option {
+  font-size: 10px;
+  width: 100px;
+}
+select {
+  font-size: 20px;
+}
